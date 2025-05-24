@@ -10,52 +10,76 @@ body {
   align-items: center;
   justify-content: center;
 }
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 2%;
-  background-color: #f1f5f0;
-}
-.logo {
-  flex-basis: 24.5%;
-  /* border: 1px solid green; */
-}
-.logo img {
-  width: clamp(80px, 10vw, 150px);
-  height: auto;
-}
-.nav-items {
-  flex-basis: 49%;
-  /* border: 1px solid red; */
-}
-.nav-items ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.nav-items ul li a {
-  text-decoration: none;
-  font-size: clamp(12px, 2vw, 18px);
-  padding: 2% 3%;
-  color: #343434;
-}
+/* !nav bar */
 
-.nav-search-box {
-  flex-basis: 24.5%;
-  /* border: 1px solid blue; */
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-div.nav-search-box input[type="text"] {
-  width: clamp(60px, 12vw, 300px);
-  outline: none;
-  padding: 5px 20px;
-  border-radius: 5px;
-  border: 1px solid #343434;
+.nav {
+  height: 50px;
+  width: 100%;
   background-color: #f1f5f0;
+  position: relative;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #2e6a2e;
+  padding: 10px 10px 10px 10px;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px;
+  text-decoration: none;
+  color: #2e6a2e;
+}
+.nav > .nav-links > a:hover {
+  text-shadow: -1px 1px 8px rgba(59, 130, 62, 0.96);
+}
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width: 800px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #2e6a2e;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #f1f5f0;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
 }
 /*****************!hero section!!! ****************/
 .hero-section img {

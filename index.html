@@ -8,34 +8,35 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Document</title>
   </head>
   <body>
     <!-- !!!   header    !!! -->
     <header>
-      <nav>
-        <div class="logo">
-          <img src="./asset/PAP Logo.png" alt="logo" />
-        </div>
-        <div class="nav-items">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">plant</a></li>
-            <li><a href="#">Planters</a></li>
-            <li><a href="#">Essentials</a></li>
-            <li><a href="#">servis</a></li>
-          </ul>
-        </div>
-        <div class="nav-search-box">
-          <div class="search">
-            <input type="text" placeholder="Search" />
-            <i class='bx bx-search-alt'></i>
+      
+      <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+           planta plant
           </div>
-          
-          
-          
-        </div>
+               </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+            </label>
+          </div>
+
+          <div class="nav-links">
+             <a href="./index.html" target="_blank">Home</a>
+             <a href="#" target="_blank">Plant</a>
+             <a href="#" target="_blank">Planters</a>
+             <a href="./shop.html" target="_blank">Shop</a>
+             <a href="./cart.html" target="_blank">Cart</a>
+          </div>
       </nav>
       <section class="hero-section">
         <img src="./asset/Rectangle 50Banner-hom.jpg" alt="banner" />
@@ -70,6 +71,7 @@
         <article class="card">
           <img src="./asset/gift.png" alt="GIFTS" />
           <span class="explain">GIFTING</span>
+        </article>
       </div>
       <div class="categories-link">
         <a href="#">See all <i class='bx bx-right-arrow-alt'></i></a>
@@ -152,27 +154,7 @@
         </article>
       </div>
      </section>
-     <!-- !!!!!!!!!!!!!!!blog!!!!!!!!!!!!!!!!!! -->
-       <!-- <section class="blog">
-        <h2>Blogs</h2>
-        <div class="blogs-wrapper">
-          <article class="blog-cover">
-            <img src="./asset/blog-cover/blog-cover-mineral.png" alt="cover">
-            <p class="overlay-text">8 Best 
-              Low Maintenance Plants 
-              For a Busy Home</p>
-            <button class="read-btn">Read</button>
-          </article>
-          <article class="blog-cover">
-            <img src="./asset/blog-cover/blog-cover-airpruf.png" alt="cover">
-            <p class="overlay-text">Air Purifying Plants 
-              You Should Take Home 
-              Today</p>
-            <button class="read-btn">Read</button>
-          </article>
-        </div>
-      </section> 
-       -->
+     
       <section class="hot-sale">
         <h2>Hot Sale</h2>
         <div class="item-wrapper">
@@ -300,16 +282,7 @@
             </ul>
           </div>
     
-          <!-- Badge and Social Media
-          <div class="footer-badge">
-            <img src="https://via.placeholder.com/100" alt="Quality Badge">
-            <div class="social-icons">
-              <a href="#"><img src="" alt="Facebook"></a>
-              <a href="#"><img src="" alt="Twitter"></a>
-              <a href="#"><img src="" alt="Instagram"></a>
-            </div>
-          </div>
-        </div> -->
+          
       </footer>
   </body>
 </html>
